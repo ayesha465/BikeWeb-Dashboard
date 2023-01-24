@@ -78,7 +78,7 @@ const routes = [
     name: "Theft Management",
     key: "rtl",
     icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-    route: "/rtl",
+    route: "/dashboard",
     component: <RTL />,
   },
   {
