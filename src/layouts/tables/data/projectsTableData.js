@@ -33,7 +33,7 @@ import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
 
 export default function data() {
-  const Project = ({ image, name }) => (
+  const Tracking = ({ image, name }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDAvatar src={image} name={name} size="sm" variant="rounded" />
       <MDTypography display="block" variant="button" fontWeight="medium" ml={1} lineHeight={1}>
@@ -55,8 +55,8 @@ export default function data() {
 
   return {
     columns: [
-      { Header: "project", accessor: "project", width: "30%", align: "left" },
-      { Header: "budget", accessor: "budget", align: "left" },
+      { Header: "tracking", accessor: "tracking", width: "30%", align: "left" },
+      { Header: "TrackRecord", accessor: "TrackRecord", align: "left" },
       { Header: "status", accessor: "status", align: "center" },
       { Header: "completion", accessor: "completion", align: "center" },
       { Header: "action", accessor: "action", align: "center" },
@@ -64,7 +64,7 @@ export default function data() {
 
     rows: [
       {
-        project: <Project image={LogoAsana} name="Asana" />,
+        tracking: <Tracking image={LogoAsana} name="Asana" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $2,500
@@ -83,7 +83,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoGithub} name="Github" />,
+        tracking: <Tracking image={logoGithub} name="Github" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $5,000
@@ -102,7 +102,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoAtlassian} name="Atlassian" />,
+        tracking: <Tracking image={logoAtlassian} name="Atlassian" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $3,400
@@ -121,7 +121,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoSpotify} name="Spotify" />,
+        tracking: <Tracking image={logoSpotify} name="Spotify" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $14,000
@@ -140,7 +140,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoSlack} name="Slack" />,
+        tracking: <Tracking image={logoSlack} name="Slack" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $1,000
@@ -159,7 +159,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoInvesion} name="Invesion" />,
+        tracking: <Tracking image={logoInvesion} name="Invesion" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $2,300

@@ -2,15 +2,12 @@
 =========================================================
 * Material Dashboard 2 React - v2.1.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+*  Product Page: https://www.creative-tim.com/product/material-dashboard-react
 * Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  Coded by www.creative-tim.com
+  =========================================================
+*  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 // @mui material components
@@ -32,7 +29,7 @@ import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 
 // Dashboard components
-import Projects from "layouts/dashboard/components/Projects";
+// import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
@@ -41,14 +38,14 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <MDBox py={3}>
+      <MDBox py={5}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
+            <MDBox mb={7.5}>
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Bookings"
+                title="Tracking"
                 count={281}
                 percentage={{
                   color: "success",
@@ -59,7 +56,7 @@ function Dashboard() {
             </MDBox>
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
+            <MDBox mb={7.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
                 title="Today's Users"
@@ -72,27 +69,12 @@ function Dashboard() {
               />
             </MDBox>
           </Grid>
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
-              <ComplexStatisticsCard
-                color="success"
-                icon="store"
-                title="Revenue"
-                count="34k"
-                percentage={{
-                  color: "success",
-                  amount: "+1%",
-                  label: "than yesterday",
-                }}
-              />
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
+          <Grid item xs={24} md={6} lg={3}>
+            <MDBox mb={7.5}>
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
+                title="Complete Tracking"
                 count="+91"
                 percentage={{
                   color: "success",
@@ -109,9 +91,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
+                  title="Tracking views"
+                  // description="Last Tracking  Performance"
+                  // date="campaign sent 2 days ago"
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -120,13 +102,13 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
-                  description={
+                  title="daily Tracking"
+                  /* description={
                     <>
                       (<strong>+15%</strong>) increase in today sales.
                     </>
-                  }
-                  date="updated 4 min ago"
+                  } */
+                  // date="updated 4 min ago"
                   chart={sales}
                 />
               </MDBox>
@@ -136,8 +118,8 @@ function Dashboard() {
                 <ReportsLineChart
                   color="dark"
                   title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
+                  // description="Last Tracking Performance"
+                  // date="just updated"
                   chart={tasks}
                 />
               </MDBox>
@@ -145,11 +127,8 @@ function Dashboard() {
           </Grid>
         </MDBox>
         <MDBox>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={8}>
-              <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
+          <Grid container spacing={9}>
+            <Grid item xs={34} md={9} lg={9}>
               <OrdersOverview />
             </Grid>
           </Grid>

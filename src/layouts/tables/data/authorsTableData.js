@@ -27,7 +27,7 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 export default function data() {
-  const Author = ({ image, name, email }) => (
+  const Account = ({ image, name, email }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDAvatar src={image} name={name} size="sm" />
       <MDBox ml={2} lineHeight={1}>
@@ -50,16 +50,15 @@ export default function data() {
 
   return {
     columns: [
-      { Header: "author", accessor: "author", width: "45%", align: "left" },
+      { Header: "account", accessor: "account", width: "45%", align: "left" },
       { Header: "function", accessor: "function", align: "left" },
       { Header: "status", accessor: "status", align: "center" },
-      { Header: "employed", accessor: "employed", align: "center" },
       { Header: "action", accessor: "action", align: "center" },
     ],
 
     rows: [
       {
-        author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
+        account: <Account image={team2} name="ayesha Michael" email="ayesha@BikeTracking.com" />,
         function: <Job title="Manager" description="Organization" />,
         status: (
           <MDBox ml={-1}>
@@ -78,7 +77,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
+        account: <Account image={team3} name="sheniLiras" email="sheni@Biketracking.com" />,
         function: <Job title="Programator" description="Developer" />,
         status: (
           <MDBox ml={-1}>
@@ -97,7 +96,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
+        account: <Account image={team4} name="Haida Perrier" email="Haida@BikeTracking.com" />,
         function: <Job title="Executive" description="Projects" />,
         status: (
           <MDBox ml={-1}>
@@ -116,7 +115,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
+        account: <Account image={team3} name="saira Levi" email="saira@BikeTracking.com" />,
         function: <Job title="Programator" description="Developer" />,
         status: (
           <MDBox ml={-1}>
@@ -126,44 +125,6 @@ export default function data() {
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
             24/12/08
-          </MDTypography>
-        ),
-        action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
-        ),
-      },
-      {
-        author: <Author image={team3} name="Richard Gran" email="richard@creative-tim.com" />,
-        function: <Job title="Manager" description="Executive" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
-          </MDBox>
-        ),
-        employed: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            04/10/21
-          </MDTypography>
-        ),
-        action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
-        ),
-      },
-      {
-        author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
-        function: <Job title="Programator" description="Developer" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
-          </MDBox>
-        ),
-        employed: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            14/09/20
           </MDTypography>
         ),
         action: (
